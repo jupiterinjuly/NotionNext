@@ -15,8 +15,8 @@ const BLOG = {
   APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [20, 6], // 夜间模式起至时间，false时关闭根据时间自动切换夜间模式
 
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'JupyterMou', // 您的昵称 例如 tangly1024
-  BIO: process.env.NEXT_PUBLIC_BIO || '22级西南财经大学金融学（经管国际化创新实验班）', // 作者简介
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Jupyter Mou', // 您的昵称 例如 tangly1024
+  BIO: process.env.NEXT_PUBLIC_BIO || '西南财经大学 22级金融学（经管国际化创新实验班）｜深圳大学 2026级人工智能', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://jupytermou.cn', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客, 牟馨怡, Jupiter, blog', // 网站关键词 英文逗号隔开
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || 'https://file.notion.so/f/f/9d900ef7-c8a0-81fb-a0d1-0003964db899/9c1223cd-4199-4d22-889b-b9c66bfaf278/favicon.ico?table=block&id=2b400ef7-c8a0-80a4-b6bb-f0c4de897d05&spaceId=9d900ef7-c8a0-81fb-a0d1-0003964db899&expirationTimestamp=1763942400000&signature=LZYqXNlk5-a-bYu1cOpjEXzN3wgGkZidN7knmgMECf4&downloadName=favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
