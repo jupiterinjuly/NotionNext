@@ -41,6 +41,15 @@ module.exports = {
   POST_WAITING_TIME_FOR_404:
     process.env.NEXT_PUBLIC_POST_WAITING_TIME_FOR_404 || '8', // 文章加载超时时间，单位秒；超时后跳转到404页面
 
+  // 【添加此配置】文章分类映射：Notion中的分类名（中文）: 映射到URL的别名（英文）
+  POSTS_CATEGORY_MAPPING: { 
+    "考试复习": "exam",
+    "技术分享": "study",
+    "心情随笔": "emotion", 
+    "课程作业": "course", 
+    "项目经历": "project" 
+  },
+
   // 标签相关
   TAG_SORT_BY_COUNT: true, // 标签是否按照文章数量倒序排列，文章多的标签排在前。
   IS_TAG_COLOR_DISTINGUISHED:
