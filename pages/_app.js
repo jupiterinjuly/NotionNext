@@ -62,25 +62,25 @@ const MyApp = ({ Component, pageProps }) => {
       <ExternalPlugins {...pageProps} />
     </GlobalContextProvider>
   )
-  // return (
-  //   <>
-  //     {enableClerk ? (
-  //       <ClerkProvider localization={zhCN}>{content}</ClerkProvider>
-  //     ) : (
-  //       content
-  //     )}
-  //   </>
-
-  // )
   return (
-    <GlobalContextProvider {...pageProps}>
-      <Layout>
-        {clerkWrapper(<Component {...pageProps} />)}
-      </Layout>
-      <Analytics />
-      <ExternalPlugins />
-    </GlobalContextProvider>
+    <>
+      {enableClerk ? (
+        <ClerkProvider localization={zhCN}>{content}</ClerkProvider>
+      ) : (
+        content
+      )}
+    </>
+
   )
+  // return (
+  //   <GlobalContextProvider {...pageProps}>
+  //     <Layout>
+  //       {clerkWrapper(<Component {...pageProps} />)}
+  //     </Layout>
+  //     <Analytics />
+  //     <ExternalPlugins />
+  //   </GlobalContextProvider>
+  // )
 }
 
 export default MyApp
